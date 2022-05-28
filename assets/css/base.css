@@ -27,3 +27,10 @@ html{
   display: flex;
   flex-wrap: wrap;
 }
+a{
+  text-decoration: none;
+  color: unset;
+}
+ul{
+  list-style: none;
+}
