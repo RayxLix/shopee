@@ -58,6 +58,7 @@ Mặc định trên trình duyệt fontsize 100% là 16px.
 
     - Tính chất hình ảnh sẽ không tự co nhỏ theo thẻ cha của nó.=> width: 100%.
     - Do có thuộc tính là inline nên sẽ có margin ẩn. => display:block;
+    - object-fit giải quyết đc cắt ảnh.
 
 # Back-Ground
 
@@ -136,3 +137,24 @@ flex-wrap: wrap;
     4. Selector những thằng có điểm giống nhau:
         + document.querySelectorAll('#nav li a[href*="#"]')
     5. Selector ra thằng có con trong đó trpng js: nextElementSibling
+    6. Không cho user copy dùng thuộc tính user-select:none;
+    7. CHọn tâm của scale dùng thuộc tính transform-origin.
+    8. Làm cái mũi tên chỉa lên. dùng border ko set width height mà dùng độ dày của border left, right, top, bottom.
+    9. Sử dụng thuộc tính will-change để tăng tính tối ưu cho animation.
+    10. hover vào chạy tới chạy lui: dùng :hover + transition + relative.
+    ***
+
+.category\_\_item--link{
+display: block;
+padding: 8px 12px ;
+right: 0;
+transition: right ease-in 1s;
+position: relative;
+
+}
+.category\_\_item--link:hover{
+color: #ee4d2d;
+right: -4px;
+}
+
+---

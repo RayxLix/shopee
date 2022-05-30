@@ -1,0 +1,115 @@
+.container{
+  padding-top: 20px;
+  background-color: #f5f5f5;
+}
+.category{
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 0 8px;
+}
+.category__heading{
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.category__heading> span i{
+  margin-right: 8px;
+}
+.category__list{
+  margin-top: 8px;
+}
+.category__item{
+  font-size: 1.4rem;
+}
+.category__item--link{
+  display: block;
+  padding: 8px 12px ;
+  right: 0;
+  transition: right linear .2s;
+  position: relative;
+ 
+}
+.category__item--link:hover{
+  color: #ee4d2d;
+  right: -4px;
+}
+.category__item--link.category__item--active{
+  color: #ee4d2d;
+}
+.category__item--link.category__item--active::before{
+  content: '';
+  border: 4px solid;
+  border-color: transparent transparent transparent  #ee4d2d ;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform:translateY(-50%);
+}
+
+/* HOME */
+.home__filter{
+  background-color: #ededed;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+.home__filter--list{
+
+}
+.filter__sort--wraper{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding:0 20px
+}
+.filter__list--item{
+  margin-right: 1rem;
+  padding: 9px 15px;
+  background-color: #ee4d2d;
+  color: #fff;
+  
+} 
+.filter__sort--label{
+  margin-right: 10px;
+}
+.home__filter--info{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.filter__info--quantity{
+  color: #ee4d2d;
+  padding: 0 12px;
+}
+.filter__btn--page{
+  padding:0 12px;
+  margin-right: 8px;
+}
+.filter__btn--page > button{
+  border: 1px solid rgba(204, 204, 204, 0.612);
+  background-color: #f9f9f9;
+  width: 28px;
+  height: 32px;
+  
+}
+.btn__filter--disible{
+  background-color: #fff; 
+  color: #ccc;
+  cursor: default;
+  user-select: none;
+}
+.filter__price--wraper{
+  display: flex;
+  justify-content: space-between;
+}
+.filter__price{
+  display: inline-block;
+  width: 200px;
+  background-color: #fff;
+  color: black;
+}

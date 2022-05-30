@@ -3,6 +3,7 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color:#333;
+  --primary-color: rgb(238, 77, 45);
 }
 *{
   box-sizing: inherit;
@@ -26,6 +27,7 @@ html{
 .grid__row{
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -12px;
 }
 a{
   text-decoration: none;
@@ -33,4 +35,26 @@ a{
 }
 ul{
   list-style: none;
+  margin-bottom: 0;
+}
+img{
+  width: 100%;
+}
+@keyframes navNotiGrowth{
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.grid__colum--2{
+  padding: 0 12px;
+  width: calc(100%/12*2);
+}
+.grid__colum--10{
+  padding: 0 12px;
+  width: calc(100%/12*10);
 }
