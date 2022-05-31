@@ -50,11 +50,11 @@ img{
     transform: scale(1);
   }
 }
-.grid__colum--2{
+.grid__column--2{
   padding: 0 12px;
   width: calc(100%/12*2);
 }
-.grid__colum--10{
+.grid__column--10{
   padding: 0 12px;
   width: calc(100%/12*10);
 }

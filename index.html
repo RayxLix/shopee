@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/container.css" />
+    <link rel="stylesheet" href="./assets/css/productItem.css" />
   </head>
   <body>
     <div class="app">
@@ -235,7 +236,7 @@
       <div class="container">
         <div class="grid">
           <div class="grid__row">
-            <div class="grid__colum--2">
+            <div class="grid__column--2">
               <nav class="category">
                 <h3 class="category__heading">
                   <span><i class="fa-solid fa-bars"></i></span> Danh Mục
@@ -263,7 +264,7 @@
               </nav>
             </div>
 
-            <div class="grid__colum--10">
+            <div class="grid__column--10">
               <div class="home__filter">
                 <div class="filter__sort--wraper">
                   <span class="filter__sort--label">Sắp xếp theo</span>
@@ -280,6 +281,10 @@
                       <div class="filter__price--wraper">
                         <span>Giá</span>
                         <i class="fa-solid fa-chevron-down"></i>
+                        <div class="filter__price--select">
+                          <p>Giá: Thấp đến Cao</p>
+                          <p>Giáo: Cao đến Thấp</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -289,6 +294,56 @@
                   <span class="filter__info--quantity">1</span>
                   <div class="filter__btn--page">
                     <button><</button><button>></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="home__product">
+                <div class="grid__row">
+                  <div class="grid__column--2">
+                    <div class="product__item">
+                      <!-- IMAGE -->
+                      <div
+                        class="product__item--image"
+                        style="
+                          background-image: url(./assets/imgs/product-item.jpg);
+                        "
+                      ></div>
+                      <!-- NAME -->
+                      <h4 class="product__item--name">
+                        Áo croptop nữ kiểu dáng ôm, thun tay ngắn phối viền
+                        CRAZYTEEN phong cách năng động (AC0067)
+                      </h4>
+                      <!-- VOUCHER -->
+                      <div class="product__voucher">
+                        <span class="product__voucher--discount"
+                          >Giảm <span class="curentcy-dong">₫</span> 666k</span
+                        >
+                        <span class="shop__type">ShopDacBiet</span>
+                      </div>
+                      <!-- PRICE -->
+                      <div class="product__item--price">
+                        <span class="product__price--old"
+                          ><span class="curentcy-dong">₫</span>113.000</span
+                        >
+                        <span class="product__price--new"
+                          ><span class="curentcy-dong">₫</span>64.410</span
+                        >
+                      </div>
+                      <!-- DESCRIPTION -->
+                      <div class="product__iten--description">
+                        <span class="rate__start-wraper"
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="product__item--sold">Đã bán 368</span>
+                      </div>
+                      <!-- LOCATION -->
+                      <div class="product__shop--location">Tp. Hồ Chí Minh</div>
+                    </div>
                   </div>
                 </div>
               </div>

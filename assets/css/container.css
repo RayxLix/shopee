@@ -106,6 +106,7 @@
 .filter__price--wraper{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .filter__price{
   display: inline-block;
@@ -113,3 +114,33 @@
   background-color: #fff;
   color: black;
 }
+.filter__price--select{
+  position: absolute;
+  bottom: -80px;
+  left: -15px;
+  width: 200px;
+  background-color: #fff;
+  color: black;
+  display: none;
+}
+.filter__price--select::before{
+  content: '';
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+}
+.filter__price--select > p{
+  height: 34px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.filter__price--select > p:hover{
+  color: #ee4d2d;
+}
+.filter__price:hover .filter__price--select{
+  display: block;
+}
+
