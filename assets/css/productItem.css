@@ -1,42 +1,126 @@
 .product__item{
   height: 341px;
   background-color: #fff;
+  position: relative;
+ 
+
 }
 .product__item--image{
   padding-top: 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.product__item--name{
-
+.product__item--content{
+  padding: 4px 8px;
 }
+.product__item--name{
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  word-break: break-word;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-top: 4px;
+} 
 .product__voucher{
-
+  display: flex;
+  
+  align-items: center;
+  height: 16px;
+  overflow: hidden;
+  
+}
+.svg__voucher{
+  color: #fff;
+  width: 62px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.svg__voucher--item{
+  width: 4px;
+  height: 16px;
+  color: #f69113;
 }
 .product__voucher--discount{
-
+  width: 82px;
+  height: 14px;
+  background-color: #f69113;
 }
 .shop__type{
-
+  height: 14px;
+  color: #ff455c;
+  border: 1px solid #ff455c;
+  overflow:unset;
+  align-content: center;
+  padding: 0 4px;
+  line-height: 14px;
+  margin-left: 4px;
 }
 .product__item--price{
-
+  height: 28px;
+  padding-top: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 .product__price--old{
-
+  color: #0000008A;
+  text-decoration: line-through;
 }
 .product__price--new{
-
+  color: #ee4d2d;
 }
 .product__iten--description{
-
+  height: 32px;
+  padding-top: 12px;
 }
 .rate__start-wraper{
-
+  color: #ffce3d;
 }
 .product__item--sold{
 
 }
 .product__shop--location{
-
+  height: 26px;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #000000a6;
+}
+.icon-mall{
+  position: absolute;
+  top: 12px;
+  left: -4px;
+  width: 32px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #d0011b;
+  justify-content: center;
+  z-index: 99;
+}
+.icon-mall-item{
+  background-size: contain;
+  width: 20px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-color: #d0011b;
+}
+.sub-icon-mall{
+ 
+  position: absolute;
+ 
+  border: solid;
+ 
+ 
+  border-color: red red transparent transparent;
+  top: 16px;
+  left: 0;
+  z-index: 0;
+  filter: brightness(60%)
+  
 }
